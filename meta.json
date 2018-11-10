@@ -33,6 +33,11 @@
       "type": "confirm",
       "message": "Add testcafe to run integration tests?",
       "default": false
+    },
+    "nuxtjs": {
+      "type": "confirm",
+      "message": "Add Nuxt.js support?",
+      "default": false
     }
   },
   "filters": {
@@ -42,7 +47,14 @@
     "client/views/**/*.{js,css}": "jsx",
     "app/*": "electron",
     ".eslintrc": "eslint",
-    "test/e2e/*": "testcafe"
+    "test/e2e/*": "testcafe",
+    "client/assets/*": "nuxtjs",
+    "client/store/*": "nuxtjs",
+    "client/pages/*": "nuxtjs",
+    "client/layouts/*": "nuxtjs",
+    "client/middleware/*": "nuxtjs",
+    "client/plugins/*": "nuxtjs",
+    "client/static/*": "nuxtjs"
   },
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{#electron}}\n\nIn another tab:\n\n  npm run app{{/electron}}"
 }
