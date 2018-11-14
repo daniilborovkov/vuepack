@@ -41,15 +41,16 @@
   },
   "browserslist": ["last 2 versions", "ie > 8"],
   "dependencies": {
+    {{#if nuxtjs}}
+    "nuxt": "^2.0.0"
+    {{else}}
     "babel-runtime": "^6.18.0",
-    {{#nuxtjs}}
-    "nuxt": "^2.0.0",
-    {{/nuxtjs}}
     "promise-polyfill": "^6.0.2",
     "vue": "^2.2.0",
     "vue-router": "^2.0.0",
     "vuex": "^2.0.0",
     "vuex-router-sync": "^4.0.0"
+    {{#endif}}
     
   },
   "devDependencies": {
