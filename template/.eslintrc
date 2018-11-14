@@ -1,6 +1,23 @@
 {
+  {{#if nuxtjs}}
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "plugin:vue/essential"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  {{else}}
   "extends": "vue",{{#testcafe}}
   "plugins": ["testcafe"],{{/testcafe}}
+  {{/if}}
   "rules": {
     "import/no-unresolved": 0,
     "import/no-unassigned-import": 0
