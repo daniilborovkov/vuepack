@@ -60,7 +60,7 @@
     "client/index.js": "!nuxtjs",
     "client/promise-polyfill.js": "!nuxtjs",
     "client/pwa.js": "!nuxtjs",
-    "build": "!nuxtjs"
+    "build/*": "!nuxtjs"
   },
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{#electron}}\n\nIn another tab:\n\n  npm run app{{/electron}}"
 }
