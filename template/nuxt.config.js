@@ -29,7 +29,7 @@ module.exports = {
           config.module.rules.push({
             enforce: 'pre',
             test: /\.(js|vue)$/,
-            loader: 'eslint-loader',
+            loader: '{{#if eslint}}eslint-loader{{else}}babel-loader',
             exclude: /(node_modules)/
           })
         }
